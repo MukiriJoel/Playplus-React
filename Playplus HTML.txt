@@ -1,0 +1,70 @@
+<!-- Homepage -->
+<div class="homepage">
+  <header>
+    <h1>Welcome to the App</h1>
+  </header>
+  <main>
+    <div class="featured-content">
+      <h2>Featured Content</h2>
+      <ul>
+        <li><a href="#">Song 1</a></li>
+        <li><a href="#">Song 2</a></li>
+        <li><a href="#">Song 3</a></li>
+      </ul>
+    </div>
+    <div class="share-section">
+      <h2>Share Your Music</h2>
+      <input type="file" id="music-file" accept="audio/*">
+      <button onclick="app.homepage.shareMusic(document.getElementById('music-file').files[0])">Share</button>
+    </div>
+  </main>
+  <footer>
+    <ul>
+      <li><a href="#discover">Discover</a></li>
+      <li><a href="#messaging">Messaging</a></li>
+      <li><a href="#education">Education</a></li>
+    </ul>
+  </footer>
+</div>
+
+<!-- Discovery page -->
+<div class="discover-page">
+  <header>
+    <h1>Discover</h1>
+  </header>
+  <main>
+    <form id="search-form">
+      <label for="search-query">Search:</label>
+      <input type="text" id="search-query">
+      <button type="submit" onclick="app.discover.search(document.getElementById('search-query').value); return false;">Search</button>
+    </form>
+    <div id="search-results"></div>
+  </main>
+  <footer>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#messaging">Messaging</a></li>
+      <li><a href="#education">Education</a></li>
+    </ul>
+  </footer>
+</div>
+
+<!-- Messaging page -->
+<div class="messaging-page">
+  <header>
+    <h1>Messaging</h1>
+  </header>
+  <main>
+    <div id="conversations"></div>
+    <form id="send-message-form">
+      <label for="recipient">To:</label>
+      <input type="text" id="recipient">
+      <label for="message">Message:</label>
+      <textarea id="message"></textarea>
+      <button type="submit" onclick="app.messaging.sendMessage(document.getElementById('recipient').value, document.getElementById('message').value); return false;">Send</button>
+    </form>
+  </main>
+  <footer>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#discover">Discover</a></li>

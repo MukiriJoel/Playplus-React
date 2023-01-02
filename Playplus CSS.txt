@@ -1,0 +1,133 @@
+/* General styling */
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+}
+
+/* Header and footer */
+header, footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1, footer h1 {
+  margin: 0;
+  font-size: 18px;
+}
+
+/* Homepage */
+.homepage {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.homepage header {
+  flex: 0 0 auto;
+}
+
+.homepage main {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.homepage footer {
+  flex: 0 0 auto;
+}
+
+.homepage .featured-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.homepage .featured-content h2 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.homepage .featured-content ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.homepage .featured-content li {
+  margin: 10px 0;
+}
+
+.homepage .share-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.homepage .share-section h2 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.homepage .share-section input[type="file"] {
+  margin-bottom: 10px;
+}
+
+/* Discover page */
+.discover-page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.discover-page header {
+  flex: 0 0 auto;
+}
+
+.discover-page main {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.discover-page footer {
+  flex: 0 0 auto;
+}
+
+.discover-page #search-form {
+  display: flex;
+  align-items: center;
+}
+
+.discover-page #search-form label {
+  margin-right: 10px;
+}
+
+.discover-page #search-form input[type="text"] {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.discover-page #search-form button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border: none;
+}
+
+.discover-page #search-results {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.d
