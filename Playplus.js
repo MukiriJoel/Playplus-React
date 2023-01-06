@@ -1,4 +1,4 @@
-Basic structure of the app
+// Basic structure of the app
 
 // Define the app object
 const app = {
@@ -75,8 +75,8 @@ app.init = function() {
 app.init();
 
 
-Functions for the buttons on the homepage, discovery page, messaging page and education page
-/ Define the app object
+// Functions for the buttons on the homepage, discovery page, messaging page and education page
+// / Define the app object
 const app = {
   // Homepage
   homepage: {
@@ -131,7 +131,7 @@ const app = {
 
 
 
-Artist profile
+// Artist profile
 
 const user = {
   name: 'Jane Doe',
@@ -172,8 +172,8 @@ function renderProfile() {
   document.body.appendChild(posts);
   document.body.appendChild(bio);
   document.body.appendChild(profilePicture);
-
-Producer profile
+}
+// Producer profile
 
 const producer = {
   name: 'John Smith',
@@ -181,7 +181,7 @@ const producer = {
   password: 'qwerty456',
   genres: ['electronic', 'pop', 'rock'],
   equipment: ['Ableton Live', 'Logic Pro', 'Maschine'],
-  bio: 'Hi, my name is John and I am a music producer. I specialize in electronic, pop, and rock music, and I have a lot of experience working with Ableton Live, Logic Pro, and Maschine. Let's make some hits together!',
+  bio: 'Hi, my name is John and I am a music producer. I specialize in electronic, pop, and rock music, and I have a lot of experience working with Ableton Live, Logic Pro, and Maschine. Lets make some hits together!',
   profilePicture: 'https://example.com/john-smith.jpg'
 };
 
@@ -213,7 +213,7 @@ function renderProfile() {
 
 renderProfile();
 
-Dancer profile
+// Dancer profile
 const dancer = {
   name: 'Samantha Jones',
   email: 'samantha@example.com',
@@ -250,7 +250,7 @@ renderProfile();
 
 
 
-Discover page 
+// Discover page 
 
 const content = [
   {
@@ -313,9 +313,9 @@ function renderContent(item) {
   title.textContent = item.title;
   artist.textContent = 'Artist: ' + item.artist;
   producer.textContent = 'Producer: ' + item.producer;
-  genre.textContent = 'Genre: ' +
-
-Update 'renderDiscoverPage' function
+  genre.textContent = 'Genre: ' + item.genre;
+}
+// Update 'renderDiscoverPage' function
 
 const discover = {
   // ...
@@ -381,8 +381,11 @@ function renderDiscoverPage(discover) {
   // Append the advertisers section to the discover page
   discoverPage.appendChild(advertisersSection);
 
+}
+  ]
 
-Geo location API
+}
+// Geo location API
 
 // Define the artist, producer, and dancer objects as before
 const artist = {
@@ -391,28 +394,28 @@ const artist = {
   password: '123qwe',
   genres: ['folk', 'rock', 'soul'],
   instruments: ['guitar', 'piano', 'vocals'],
-  bio: 'Hi, my name is James and I am a musician. I specialize in folk, rock, and soul music, and I have a lot of experience playing the guitar, piano, and singing. Let's make some beautiful music together!',
+  bio: 'Hi, my name is James and I am a musician. I specialize in folk, rock, and soul music, and I have a lot of experience playing the guitar, piano, and singing. Lets make some beautiful music together!',
   profilePicture: 'https://example.com/james-smith.jpg'
 };
 
-const producer = {
-  name: 'John Smith',
-  email: 'john@example.com',
-  password: 'qwerty456',
-  genres: ['electronic', 'pop', 'rock'],
-  equipment: ['Ableton Live', 'Logic Pro', 'Maschine'],
-  bio: 'Hi, my name is John and I am a music producer. I specialize in electronic, pop, and rock music, and I have a lot of experience working with Ableton Live, Logic Pro, and Maschine. Let's make some hits together!',
-  profilePicture: 'https://example.com/john-smith.jpg'
-};
+// const producer = {
+//   name: 'John Smith',
+//   email: 'john@example.com',
+//   password: 'qwerty456',
+//   genres: ['electronic', 'pop', 'rock'],
+//   equipment: ['Ableton Live', 'Logic Pro', 'Maschine'],
+//   bio: 'Hi, my name is John and I am a music producer. I specialize in electronic, pop, and rock music, and I have a lot of experience working with Ableton Live, Logic Pro, and Maschine. Lets make some hits together!',
+//   profilePicture: 'https://example.com/john-smith.jpg'
+// };
 
-const dancer = {
-  name: 'Samantha Jones',
-  email: 'samantha@example.com',
-  password: 'abc123',
-  styles: ['hip hop', 'jazz', 'modern'],
-  experience: 'I have been dancing for 10 years and have trained in a variety of styles including hip hop, jazz, and modern. I have performed in numerous dance competitions and shows, and I love collaborating with other artists to create unique and dynamic performances.',
-  profilePicture: 'https://example.com/samantha-jones.jpg'
-};
+// const dancer = {
+//   name: 'Samantha Jones',
+//   email: 'samantha@example.com',
+//   password: 'abc123',
+//   styles: ['hip hop', 'jazz', 'modern'],
+//   experience: 'I have been dancing for 10 years and have trained in a variety of styles including hip hop, jazz, and modern. I have performed in numerous dance competitions and shows, and I love collaborating with other artists to create unique and dynamic performances.',
+//   profilePicture: 'https://example.com/samantha-jones.jpg'
+// };
 
 // Define a function to render the location information for each profile
 function renderLocation(profile) {
@@ -439,9 +442,9 @@ function renderLocation(profile) {
 function renderProfile(profile) {
   // Create elements for the profile page
   const name
+}
 
-
-Homepage
+// Homepage
 
 const sections = [
   {
@@ -453,7 +456,7 @@ const sections = [
         email: 'james@example.com',
         genres: ['folk', 'rock', 'soul'],
         instruments: ['guitar', 'piano', 'vocals'],
-        bio: 'Hi, my name is James and I am a musician. I specialize in folk, rock, and soul music, and I have a lot of experience playing the guitar, piano, and singing. Let's make some beautiful music together!',
+        bio: 'Hi, my name is James and I am a musician. I specialize in folk, rock, and soul music, and I have a lot of experience playing the guitar, piano, and singing. Lets make some beautiful music together!',
         profilePicture: 'https://example.com/james-smith.jpg'
       },
       {
@@ -461,7 +464,7 @@ const sections = [
         email: 'samantha@example.com',
         genres: ['electronic', 'pop', 'rock'],
         instruments: ['keyboard', 'vocals'],
-        bio: 'Hi, my name is Samantha and I am a singer-songwriter. I specialize in electronic, pop, and rock music, and I have a lot of experience playing the keyboard and singing. Let's make some great music together!',
+        bio: 'Hi, my name is Samantha and I am a singer-songwriter. I specialize in electronic, pop, and rock music, and I have a lot of experience playing the keyboard and singing. Lets make some great music together!',
         profilePicture: 'https://example.com/samantha-jones.jpg'
       }
     ]
@@ -475,7 +478,7 @@ const sections = [
         email: 'john@example.com',
         genres: ['electronic', 'pop', 'rock'],
         equipment: ['Ableton Live', 'Logic Pro', 'Maschine'],
-        bio: 'Hi, my name is John and I am a music producer. I specialize in electronic, pop, and rock music, and I have a lot of experience working with Ableton Live, Logic Pro, and Maschine. Let's make some hits together!',
+        bio: 'Hi, my name is John and I am a music producer. I specialize in electronic, pop, and rock music, and I have a lot of experience working with Ableton Live, Logic Pro, and Maschine. Lets make some hits together!',
         profilePicture: 'https://example.com/john-smith.jpg'
       },
       {
@@ -483,7 +486,7 @@ const sections = [
         email: 'emma@example.com',
         genres: ['house', 'techno', 'trance'],
         equipment: ['FL Studio', 'Reason', 'Serum'],
-        bio: 'Hi, my name is Emma and I am a music producer. I specialize in house, techno, and trance music, and I have a lot of experience working with FL Studio, Reason, and Serum. Let's create some dancefloor bangers!',
+        bio: 'Hi, my name is Emma and I am a music producer. I specialize in house, techno, and trance music, and I have a lot of experience working with FL Studio, Reason, and Serum. Lets create some dancefloor bangers!',
         profilePicture: 'https://example.com/emma-williams.jpg'
       }
     ]
@@ -497,9 +500,11 @@ const sections = [
         email: 'samantha@example.com',
         styles: ['hip hop', 'jazz', 'modern'],
         experience: 'I have been dancing for 10 years and have trained in a variety of styles including hip hop, jazz, and modern. I have performed in numerous dance competitions and shows, and I love collaborating with other artists to create unique
-
-
-Messaging page
+      }
+    ]
+  }
+];
+// Messaging page
 
 const messages = [
   {
@@ -518,7 +523,7 @@ const messages = [
     sender: 'John Smith',
     recipient: 'James Smith',
     subject: 'Re: Collaboration opportunity',
-    body: 'Hey James, thanks for reaching out. I'm definitely interested in collaborating. How about we schedule a Skype call for next Monday at 2pm?'
+    body: 'Hey James, thanks for reaching out. Im definitely interested in collaborating. How about we schedule a Skype call for next Monday at 2pm?'
   }
 ];
 
@@ -556,33 +561,33 @@ function renderMessages(messages) {
 // Render the messages to the page
 document.body.appendChild(renderMessages(messages));
 
-Education page
-const education = {
-  directories: [
-    {
-      name: 'Radio stations',
-      url: 'https://www.radio-stations.com/'
-    },
-    {
-      name: 'Music festivals',
-      url: 'https://www.music-festivals.com/'
-    },
-    {
-      name: 'Record labels',
-      url: 'https://www.record-labels.com/'
-    }
-  ],
-  articles: [
-    {
-      title: 'Top 10 Distributors for Independent Musicians',
-      url: 'https://www.music-industry.com/top-distributors/'
-    },
-    {
-      title: 'The Importance of Music Marketing Tools',
-      url: 'https://www.music-marketing.com/tools/'
-    }
-  ]
-};
+// Education page
+// const education = {
+//   directories: [
+//     {
+//       name: 'Radio stations',
+//       url: 'https://www.radio-stations.com/'
+//     },
+//     {
+//       name: 'Music festivals',
+//       url: 'https://www.music-festivals.com/'
+//     },
+//     {
+//       name: 'Record labels',
+//       url: 'https://www.record-labels.com/'
+//     }
+//   ],
+//   articles: [
+//     {
+//       title: 'Top 10 Distributors for Independent Musicians',
+//       url: 'https://www.music-industry.com/top-distributors/'
+//     },
+//     {
+//       title: 'The Importance of Music Marketing Tools',
+//       url: 'https://www.music-marketing.com/tools/'
+//     }
+//   ]
+// };
 
 function renderEducationPage(education) {
   // Create a container element for the page
@@ -642,8 +647,10 @@ function renderEducationPage(education) {
     articleLink.textContent = article.title;
     // Append the anchor element to
 
+  }
+}
 
-Update 'education' object
+// Update 'education' object
 const education = {
   directories: [
     {
@@ -685,7 +692,7 @@ const education = {
   ]
 };
 
-'Update renderEucation page' function
+// 'Update renderEucation page' function
 function renderEducationPage(education) {
   // ...
 
@@ -726,6 +733,7 @@ function renderEducationPage(education) {
       // Create a span element for the price
       const coursePrice = document.createElement('span');
       // Set the text for the
+    }
+  }
 
-
-
+}
